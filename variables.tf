@@ -1,13 +1,13 @@
 variable "location" {
-    description = "The location for resource deployment"
-    type        = string
+  description = "The location for resource deployment"
+  type        = string
 
-    default     = "uksouth"
+  default = "uksouth"
 }
 
 variable "tags" {
-  description   = "A map of tags to assign to the resource."
-  type          = map
+  description = "A map of tags to assign to the resource."
+  type        = map
 
   default = {
     application = "github-actions-demo"
@@ -18,15 +18,15 @@ variable "tags" {
 }
 
 variable "env" {
-  description   = "Environment prefix for resource naming."
-  type          = string
+  description = "Environment prefix for resource naming."
+  type        = string
 
-  default       = "dev"
+  default = "dev"
 }
 
 variable "app_name" {
-  description   = "Short name of app for resource naming."
-  type          = string
+  description = "Short name of app for resource naming."
+  type        = string
 
-  default       = "ghademo"
+  default = "ghademo"
 }
